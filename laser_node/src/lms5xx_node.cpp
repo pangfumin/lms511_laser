@@ -206,9 +206,12 @@ int main(int argc, char **argv)
 			}*/
 			last_scan_time = start;
 
+			// add a transform broadcaster
+			/*
             tf::Transform tfT;
             tfT.setIdentity();
             mTfBr.sendTransform(tf::StampedTransform(tfT,ros::Time::now(), "world", "laser"));
+            */
 
 
 			publish_scan(&scan_pub, range_values, n_range_values,
